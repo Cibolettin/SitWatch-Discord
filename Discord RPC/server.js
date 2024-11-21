@@ -28,7 +28,7 @@ app.post('/update-status', (req, res) => {
         state: `Görüntülenme: ${video.views} • ${video.date}`,
         largeImageKey: "logo",
         largeImageText: "Sitwatch.net",
-        buttons: [{ label: "Videoyu Izle", url: "https://sitwatch.net" }],
+        buttons: [{ label: "Videoyu Izle", url: video.link }],
         smallImageKey: "logo",
         smallImageText: `Beğeniler: ${video.likes}, Beğenmeme: ${video.dislikes}, Karasız: ${video.midlikes}`
     })
